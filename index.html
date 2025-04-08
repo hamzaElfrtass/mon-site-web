@@ -148,7 +148,7 @@
       // the actual location values.
       instance.send({
         input: {
-          text: "Ok I've shared my location."
+          text: "D'accord, j'ai partagé ma position."
         },
         context: {
           "skills": {
@@ -169,12 +169,12 @@
      * appropriate message.
      */
     function getLocationError(error, instance) {
-      let text = "There was an error sharing my location.";
+      let text = "Une erreur est survenue lors du partage de ma position.";
       // See https://developer.mozilla.org/en-US/docs/Web/API/GeolocationPositionError.
       if (error.code === GeolocationPositionError.PERMISSION_DENIED) {
-        text = "I don't want to share my location at this time.";
+        text = "Je ne souhaite pas partager ma position pour le moment.";
       } else if (error.code === GeolocationPositionError.POSITION_UNAVAILABLE) {
-        text = 'The browser encountered an error sharing my location.';
+        text = 'Le navigateur a rencontré une erreur lors du partage de ma position.';
       }
       instance.send({ input: { text } });
     }
@@ -211,7 +211,7 @@
     // own assistant if you wish to try this example with your assistant. You can find the documentation for this at
     // https://web-chat.global.assistant.watson.cloud.ibm.com/docs.html?to=api-configuration#configurationobject.
     window.watsonAssistantChatOptions = {
-      integrationID: "30a0ad13-c6f8-4da0-90a1-9b0760359d3a",
+      integrationID: "9c716cb7-5dc6-41d3-8cb2-74b611791a27",
       region: "au-syd",
       serviceInstanceID: "02cff0bf-6880-413a-a103-7e26e50ff214",
       onLoad: onLoad,
