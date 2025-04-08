@@ -172,7 +172,7 @@
       let text = "Une erreur est survenue lors du partage de ma position.";
       // See https://developer.mozilla.org/en-US/docs/Web/API/GeolocationPositionError.
       if (error.code === GeolocationPositionError.PERMISSION_DENIED) {
-        text = "Je ne souhaite pas partager ma position pour le moment.";
+        text = "non";
       } else if (error.code === GeolocationPositionError.POSITION_UNAVAILABLE) {
         text = 'Le navigateur a rencontré une erreur lors du partage de ma position.';
       }
